@@ -4,9 +4,9 @@ RSpec.describe 'Driver spec' do
   before(:all) do
     @solver = SudokuSolver.new
 
-    @easy  = File.read(File.absolute_path("spec/boards/easy50.txt")).split("\n")
-    @top95 = File.read(File.absolute_path("spec/boards/top95.txt")).split("\n")
-    @hard  = File.read(File.absolute_path("spec/boards/hardest.txt")).split("\n")
+    @easy  = File.read(File.expand_path("spec/boards/easy50.txt")).split("\n")
+    @top95 = File.read(File.expand_path("spec/boards/top95.txt")).split("\n")
+    @hard  = File.read(File.expand_path("spec/boards/hardest.txt")).split("\n")
   end
 
   def multiple(puzzles)
