@@ -13,8 +13,16 @@
 #   g is a grid,   e.g. 81 non-blank chars, e.g. starting with '.18...7...
 #   values is a hash of possible values, e.g. {'A1'=>'123489', 'A2'=>'8', ...}
 
-class SudokuSolver
-	VERSION = "1.4"
+# Algorithm by Peter Norvig @ http://www.norvig.com/sudoku.html
+
+# More constraints:
+# http://www.scanraid.com/BasicStrategies.htm
+# http://www.krazydad.com/blog/2005/09/29/an-index-of-sudoku-strategies/
+# http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/sudoku/
+
+class Sudokusolver
+  VERSION = "1.4.0"
+
   attr_reader :rows, :cols, :squares, :unitlist, :peers, :units
 
 	# Cross-product
@@ -202,10 +210,3 @@ class SudokuSolver
   end
 
 end
-
-# Algorithm by Peter Norvig @ http://www.norvig.com/sudoku.html
-
-# More constraints:
-# http://www.scanraid.com/BasicStrategies.htm
-# http://www.krazydad.com/blog/2005/09/29/an-index-of-sudoku-strategies/
-# http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/sudoku/
