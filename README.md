@@ -3,6 +3,8 @@ Sudokusolver
 
 Commandline program and library for solving Sudoku puzzles
 
+[![Build Status](https://travis-ci.org/kaspergrubbe/sudokusolver.svg?branch=add_travis)](https://travis-ci.org/kaspergrubbe/sudokusolver)
+
 ## History
 
 This software was translated from the python source code
