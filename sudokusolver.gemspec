@@ -5,7 +5,7 @@ require 'sudokusolver'
 
 Gem::Specification.new do |spec|
   spec.name          = "sudokusolver"
-  spec.version       = Sudokusolver::VERSION
+  spec.version       = SudokuSolver::VERSION
   spec.authors       = ["Martin-Louis Bright"]
   spec.email         = ["mlbright@gmail.com"]
   spec.summary       = %q{Commandline program and library for solving Sudoku puzzles}
