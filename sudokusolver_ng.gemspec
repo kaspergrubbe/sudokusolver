@@ -6,8 +6,8 @@ require 'sudokusolver_ng'
 Gem::Specification.new do |spec|
   spec.name          = "sudokusolver_ng"
   spec.version       = SudokuSolverNg::VERSION
-  spec.authors       = ["Kasper Grubbe"]
-  spec.email         = ["kaspergrubbe@gmail.com"]
+  spec.authors       = ["Martin-Louis Bright", "Kasper Grubbe"]
+  spec.email         = ["mlbright@gmail.com", "kaspergrubbe@gmail.com"]
   spec.summary       = %q{Commandline program and library for solving Sudoku puzzles}
   spec.homepage      = ""
   spec.license       = "MIT"
