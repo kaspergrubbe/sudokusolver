@@ -20,8 +20,8 @@
 # http://www.krazydad.com/blog/2005/09/29/an-index-of-sudoku-strategies/
 # http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/sudoku/
 
-class SudokuSolver
-  VERSION = "1.4.0"
+class SudokuSolverNg
+  VERSION = "2.0.0"
 
   attr_reader :rows, :cols, :squares, :unitlist, :peers, :units
 
