@@ -1,13 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sudokusolver'
+require 'sudokusolver_ng'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sudokusolver"
-  spec.version       = SudokuSolver::VERSION
-  spec.authors       = ["Martin-Louis Bright"]
-  spec.email         = ["mlbright@gmail.com"]
+  spec.name          = "sudokusolver_ng"
+  spec.version       = SudokuSolverNg::VERSION
+  spec.authors       = ["Martin-Louis Bright", "Kasper Grubbe"]
+  spec.email         = ["mlbright@gmail.com", "kaspergrubbe@gmail.com"]
   spec.summary       = %q{Commandline program and library for solving Sudoku puzzles}
   spec.homepage      = ""
   spec.license       = "MIT"

@@ -1,8 +1,8 @@
-require 'sudokusolver'
+require 'sudokusolver_ng'
 
 RSpec.describe 'Driver spec' do
   before(:all) do
-    @solver = SudokuSolver.new
+    @solver = SudokuSolverNg.new
 
     @easy  = File.read(File.expand_path("spec/boards/easy50.txt")).split("\n")
     @top95 = File.read(File.expand_path("spec/boards/top95.txt")).split("\n")
