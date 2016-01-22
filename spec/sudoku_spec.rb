@@ -1,6 +1,6 @@
 require 'sudokusolver_ng'
 
-RSpec.describe 'Driver spec' do
+RSpec.describe "Driver spec" do
   before(:all) do
     @solver = SudokuSolverNg.new
 
