@@ -26,14 +26,14 @@ RSpec.describe "Driver spec" do
     puzzle   = '4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......'
     solution = @solver.string_solution(@solver.search(@solver.parse_grid(puzzle)))
 
-    expect(@solver.check_solution(solution)).to be false
+    expect(@solver.check_solution(solution)).to be true
   end
 
   it 'run with an empty puzzle' do
     puzzle = '.................................................................................'
     solution = @solver.string_solution(@solver.search(@solver.parse_grid(puzzle)))
 
-    expect(@solver.check_solution(solution)).to be false
+    expect(@solver.check_solution(solution)).to be true
   end
 
   it 'should solve all easy boards' do
