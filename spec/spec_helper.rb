@@ -83,3 +83,8 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 end
+
+if ['KNAPSACK_GENERATE_REPORT', 'BUILDKITE_PARALLEL_JOB_COUNT', 'BUILDKITE_PARALLEL_JOB'].any?{|t| ENV[t]}
+  require 'knapsack'
+  Knapsack::Adapters::RSpecAdapter.bind
+end
